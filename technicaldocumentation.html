@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+  <link rel="stylesheet" type="text/css" href="technicaldocumentation.css">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <nav id="navbar">
+            <header class="nav-header">Responsive Web Design</header>
+            <ul>
+              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+              <li>
+                <a class="nav-link" href="#What_you_will_learn"
+                  >What you will learn</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#Basic_HTML">Basic HTML</a>
+              </li>
+              <li><a class="nav-link" href="#Basic_CSS">Basic CSS</a></li>
+              <li><a class="nav-link" href="#Applied_Visual_Design">Applied Visual Design</a></li>
+              <li>
+                <a class="nav-link" href="#Applied_accesibility">Applied accesibility</a>
+              </li>
+              <li><a class="nav-link" href="#Responsive_web_design_principles">Responsive web design principles</a></li>
+              <li><a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a></li>
+              <li><a class="nav-link" href="#CSS_Grid">CSS Grid</a></li>
+              <li><a class="nav-link" href="#Reference">Reference</a></li>
+
+            </ul>
+          </nav>
+    </head>
+   
+    <body>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <hr>
+                <artice>
+                  <p>Responsive web design is about creating web pages that look good on all devices!
+
+                    A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+                  <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)</p>
+                  <p>Example:</p>
+                    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page">Try it here</a>
+                </artice>
+            </section>
+            <section class="main-section" id="What_you_will_learn">
+              <header>What you will learn</header>
+              <hr>
+              <article>
+                <p>
+                  You'll learn the languages that developers use to build webpages:
+                </p>
+                  <ul>
+                    <li> HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.</li>
+                    <li>
+                      First, you'll learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables, and best practices for accessibility by building a web form.
+                    </li>
+                    <li>
+                      Finally, you'll learn how to make webpages that respond to different screen sizes by building a Twitter card with Flexbox, and a complex blog layout with CSS Grid.
+                    </li>
+                  </ul>
+              </article>
+            </section>
+            <section class="main-section" id="Basic_HTML">
+              <header>Basic HTML</header>
+              <hr>
+                <article>
+                  <p>
+                    HTML is the standard markup language for Web pages.
+With HTML you can create your own Website.
+                  </p>
+                  <p>
+                    HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages, it describes the structure of a Web page.
+                  </p>
+                  <p>
+                    HTML consists of a series of elements, elements tell the browser how to display the content, and label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                  </p>
+                  <p>
+                    HTML5 is a new version of HTML with new functionalities with markup language with Internet technologies.
+                  </p>
+                  <p>
+                    learn more about <a href="https://www.w3schools.com/html/html_intro.asp"> HTML</a>
+                    and <a href="https://www.javatpoint.com/html-vs-html5"> HTML 5</a>
+                  </p>
+                  <p>
+                    Example:
+                    <code>
+                      <br>&lt;!DOCTYPE html&gt;<br>
+                      &lt;html&gt;<br>
+                      &lt;head&gt;<br>
+                      &lt;title&gt;Page Title&lt;/title&gt;<br>
+                      &lt;/head&gt;<br>
+                      &lt;body&gt;<br>
+
+                      <br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+                      <br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+                      <br>&lt;/body&gt;
+                      &lt;/html&gt;<br>
+                    </code>
+                  </p>
+                    <ul>
+                      <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
+                      <li>The &lt;html&gt; element is the root element of an HTML page</li>
+                      <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+                      <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                      <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                      <li>The &lt;h1&gt; element defines a large heading</li>
+                      <li>The &lt;p&gt; element defines a paragraph</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Basic_CSS">
+              <header>Basic CSS</header>
+              <hr>
+                <article>
+                  <p>
+                    CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+                  </p>
+                  <p>learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></p>
+                  <p>
+                    The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
+
+                    Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows that this is a CSS file.
+
+                    To link styles.css to index.html add the following line somewhere inside the &lt;head&gt; of the HTML document <br>
+                    Example:
+                    <code>
+                      <br>&lt;link rel="stylesheet" href="styles.css"&gt;
+                    </code>
+                  </p>
+                  <p>
+                    This <link> element tells the browser that we have a stylesheet, using the rel attribute, and the location of that stylesheet as the value of the href attribute. You can test that the CSS works by adding a rule to styles.css. Using your code editor add the following to your CSS file:
+                  </p>
+                    <code>
+                      h1 {<br>
+                        color: red;
+                      <br>}
+                    </code>
+                  <p>
+                    Save your HTML and CSS files and reload the page in a web browser. The level one heading at the top of the document should now be red. If that happens, congratulations — you have successfully applied some CSS to an HTML document. If that doesn't happen, carefully check that you've typed everything correctly.
+
+                      You can continue to work in styles.css locally, or you can use our interactive editor below to continue with this tutorial. The interactive editor acts as if the CSS in the first panel is linked to the HTML document, just as we have with our document above.
+                  </p>
+                </article>
+            </section>
+            <section class="main-section" id="Applied_Visual_Design">
+              <header>Applied Visual Design</header>
+              <hr>
+                <article>
+                  <p>
+                    Visual design is a combination of typography, color theory, graphics, animation, page layout, and more to help deliver your unique message.
+                  </p>
+                </article>
+            </section>
+            <section class="main-section" id="Applied_accesibility">
+              <header>Applied accesibility</header>
+              <hr>
+                <article>
+                  <p>
+                    In web development, accessibility refers to web content and a UI (user interface) that can be understood, navigated, and interacted with by a broad audience. This includes people with visual, auditory, mobility, or cognitive disabilities.
+                  </p>
+                  <p>
+                    learn more about <a href="https://www.w3schools.com/accessibility/index.php">applied accesibility</a>
+                  </p>
+                </article>
+            </section>
+            </section>
+            <section class="main-section" id="Responsive_web_design_principles">
+              <header>Responsive web design principles</header>
+              <hr>
+                <article>
+                  <p>
+                    There are many devices that can access the web, and they come in all shapes and sizes. Responsive web design is the practice of designing flexible websites that can respond to different screen sizes, orientations, and resolutions.
+                  </p>
+                    <ul>
+                      <li>
+                        Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
+                        A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.
+                        <br>Example:
+                        <br>The following example changes the background-color to lightgreen if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels)
+                        <code>
+                          <br>@media screen and (min-width: 480px) {<br>
+                            &nbsp;body {
+                              &nbsp;<br>background-color: lightgreen;
+                              &nbsp;&nbsp;<br>}
+                              &nbsp;<br>}
+                        </code>
+                      </li>
+                      <li>
+                        Make an Image Responsive, Making images responsive with CSS is actually very simple. You just need to add these properties to an image:
+                        <br>
+                        <code>
+                          img {
+                            max-width: 100%;
+                            height: auto;
+                          }
+                        </code>
+                        <br>
+                        The max-width of 100% will make sure the image is never wider than the container it is in, and the height of auto will make the image keep its original aspect ratio.
+                      </li>
+                      <li>
+                        Use a Retina Image for Higher Resolution DisplaysPassed. The simplest way to make your images properly appear on High-Resolution Displays, such as the MacBook Pros "retina display" is to define their width and height values as only half of what the original file is. Here is an example of an image that is only using half of the original height and width:
+                        <br>
+                        <code>
+                          &lt;style&gt;
+                            img { height: 250px; width: 250px; }
+                          &lt;/style&gt;
+                          &lt;img src="coolPic500x500" alt="A most excellent picture"&gt;
+                        </code>
+                      </li>
+                      <li>
+                        Make Typography Responsive. Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.
+                        <br>
+                        <code>
+                          &lt;h1 style="font-size:8vw;"&gt;Hello World&lt;/h1&gt;
+                          &lt;p style="font-size:2vw;"&gt;Resize the browser window to see how the font size scales.&lt;/p&gt;
+                        </code>
+                        <p>
+                          learn more about <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp">view port</a>
+                        </p>
+                      </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="CSS_Flexbox">
+              <header>CSS Flexbox</header>
+              <hr>
+                <article>
+                  <p>
+                    Flexbox is a powerful, well-supported layout method that was introduced with the latest version of CSS, CSS3. With flexbox, it's easy to center elements on the page and create dynamic user interfaces that shrink and expand automatically.
+                  </p>
+                  <p>
+                    learn more about <a href="https://www.w3schools.com/csS/css3_flexbox.asp">CSS Flexbox</a>
+                  </p>
+                </article>
+            </section>
+            <section class="main-section" id="CSS_Grid">
+              <header>CSS Grid</header>
+              <hr>
+                <article>
+                  <p>
+                    The CSS grid is a newer standard that makes it easy to build complex responsive layouts. It works by turning an HTML element into a grid, and lets you place child elements anywhere within.
+                  </p>
+                  <p>
+                    learn more about <a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a>
+                  </p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+              <header>Reference</header>
+              <hr>
+                <article>
+                  <p>
+                    Documentations are taken form
+                    <ul>
+                      <li>
+                        <a href="https://www.w3schools.com/">W3 schools</a>
+                      </li>
+                      <li>
+                        <a href="https://developer.mozilla.org/">MDN</a>
+                      </li>
+                      <li>
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/">freeCodeCamp</a>
+                      </li>
+                    </ul>
+                  </p>
+                </article>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
